@@ -41,13 +41,13 @@ data:
   subscriptions: |
     # subscription for on-sync-status-unknown trigger notifications
     - recipients:
-      - slack:test2
-      - email:test@gmail.com
+      - 'slack:test2'
+      - 'email:test@gmail.com'
       triggers:
       - on-sync-status-unknown
     # subscription restricted to applications with matching labels only
     - recipients:
-      - slack:test3
+      - 'slack:test3'
       selector: test=true
       triggers:
       - on-sync-status-unknown
